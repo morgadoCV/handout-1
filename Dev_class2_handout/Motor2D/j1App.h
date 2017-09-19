@@ -26,7 +26,7 @@ public:
 	virtual ~j1App();
 
 	// Called before render is available
-	bool Awake(xml_node& node);
+	bool Awake(xml_node& name);
 
 	// Called before the first frame
 	bool Start();
