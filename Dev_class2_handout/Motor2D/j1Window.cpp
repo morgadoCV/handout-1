@@ -38,22 +38,22 @@ bool j1Window::Awake()
 		height = HEIGHT;
 		scale = SCALE;
 
-		if(FULLSCREEN)
+		if (App->config_node.child("Macros").child("FULLSCREEN").attribute("value").as_bool())
 		{
 			flags |= SDL_WINDOW_FULLSCREEN;
 		}
 
-		if(BORDERLESS)
+		if (App->config_node.child("Macros").child("BORDERLESS").attribute("value").as_bool())
 		{
 			flags |= SDL_WINDOW_BORDERLESS;
 		}
 
-		if(RESIZABLE)
+		if (App->config_node.child("Macros").child("RESIZABLE").attribute("value").as_bool())
 		{
 			flags |= SDL_WINDOW_RESIZABLE;
 		}
 
-		if(FULLSCREEN_WINDOW)
+		if (App->config_node.child("Macros").child("FULLSCREEN_WINDOW").attribute("value").as_bool())
 		{
 			flags |= SDL_WINDOW_FULLSCREEN_DESKTOP;
 		}

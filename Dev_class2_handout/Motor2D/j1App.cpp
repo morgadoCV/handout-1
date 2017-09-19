@@ -55,7 +55,7 @@ void j1App::AddModule(j1Module* module)
 }
 
 // Called before render is available
-bool j1App::Awake()
+bool j1App::Awake(xml_node& node)
 {
 	xml_parse_result result = config.load_file("config.xml");
 	if (result)
