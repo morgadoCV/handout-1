@@ -1,4 +1,14 @@
 <!-- Config file for the game-->
 <config>
   <name>NOPAIN NOGAIN</name>
+  
+  <Macros>
+    <FULLSCREEN value=" false"></FULLSCREEN>
+    <BORDERLESS value="false"></BORDERLESS>
+    <RESIZABLE value="true"></RESIZABLE>
+    <FULLSCREEN_WINDOW value="true"></FULLSCREEN_WINDOW>
+    <WIDTH value="1024"></WIDTH>
+    <HEIGHT value="768"></HEIGHT>
+    <SCALE value="1"></SCALE>
+  </Macros>
 </config>
