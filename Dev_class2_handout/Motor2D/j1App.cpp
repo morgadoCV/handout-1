@@ -57,6 +57,12 @@ void j1App::AddModule(j1Module* module)
 // Called before render is available
 bool j1App::Awake()
 {
+	xml_parse_result result = config.load_file("config.xml");
+	if (result)
+	{
+		
+	}
+	config_node = config.child("config");
 	// TODO 3: Load config.xml file using load_file() method from the xml_document class.
 	// If everything goes well, load the top tag inside the xml_node property
 	// created in the last TODO
